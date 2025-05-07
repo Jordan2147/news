@@ -43,7 +43,10 @@ INSTALLED_APPS = [
     # Local apps
     "accounts",
     "pages",
+    "articles",
 ]
+
+TIME_ZONE = "Africa/Lagos" #new
 
 AUTH_USER_MODEL = "accounts.CustomUser"
 
@@ -135,4 +138,4 @@ CRISPY_TEMPLATE_PACK = "bootstrap5" #newly added
 LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = "home"
 
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend" # For development only, use a real email backend in production
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
